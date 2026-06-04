@@ -44,7 +44,7 @@ const Header = () => {
         <div className="nav-container">
           <div className="nav-logo">
             {/* <span className="logo-text"> Homestay</span> */}
-            <img src={logo} className="w-6 h-6" alt="Hello" />
+            <img src={logo} className="w-10 h-10" alt="Hello" />
           </div>
 
           <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>

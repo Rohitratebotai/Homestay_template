@@ -36,10 +36,10 @@
 }
 
 .nav-logo img {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 130px;
   padding: 6px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .logo {
