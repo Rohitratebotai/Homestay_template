@@ -1,0 +1,104 @@
+/* Facilities Section */
+.facilities {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.facility-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: #c9a961;
+}
+
+.facility-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #c9a961 0%, #b8975a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.facility-icon svg {
+  font-size: 32px;
+  color: white;
+}
+
+.facility-card:hover .facility-icon {
+  transform: scale(1.1);
+}
+
+.facility-card h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.facility-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .facilities {
+    padding: 60px 0;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .facility-card {
+    padding: 30px 20px;
+  }
+
+  .facility-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .facility-icon svg {
+    font-size: 24px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .facility-card {
+    padding: 25px 15px;
+  }
+}

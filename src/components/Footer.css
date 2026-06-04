@@ -1,0 +1,148 @@
+/* Footer Section */
+.footer {
+  width: 100%;
+  background: #2c3e50;
+  color: white;
+  padding: 60px 0 30px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: #c9a961;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-logo p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-section ul li a:hover {
+  color: #c9a961;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #c9a961;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #b8975a;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 20px;
+  }
+
+  .footer-section h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    gap: 20px;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+  }
+}
+
+/* Social Icons Container */
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+/* Circle Button */
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  /* 🔥 size of circle */
+  height: 42px;
+  /* 🔥 size of circle */
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Size */
+.footer-socials img {
+  width: 20px;
+  /* 🔥 icon size */
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Hover Effect */
+.footer-socials a:hover {
+  transform: translateY(-3px) scale(1.1);
+  background-color: #f1f1f1;
+}

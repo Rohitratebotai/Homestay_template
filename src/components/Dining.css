@@ -1,0 +1,106 @@
+/* Dining Section */
+.dining {
+  padding: 100px 0;
+  background: white;
+}
+
+.dining-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.dining-text {
+  padding-right: 20px;
+}
+
+.dining-text .section-subtitle {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.dining-text .section-title {
+  text-align: left;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.dining-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.dining-features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.dining-features .feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #333;
+}
+
+.dining-features .feature svg {
+  color: #c9a961;
+  font-size: 18px;
+}
+
+.dining-features .feature span {
+  font-weight: 500;
+}
+
+.dining-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+}
+
+.dining-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dining-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .dining {
+    padding: 60px 0;
+  }
+
+  .dining-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .dining-text {
+    padding-right: 0;
+    order: 2;
+  }
+
+  .dining-image {
+    order: 1;
+  }
+
+  .dining-text .section-title {
+    font-size: 32px;
+  }
+
+  .dining-image img {
+    height: 300px;
+  }
+}
